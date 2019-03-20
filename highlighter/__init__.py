@@ -31,7 +31,7 @@ def create_app():
         """Markup searched string in given text.
         @:param text - string text to be processed
         @:return marked text, e.g., "sample text <mark>highlighted part</mark> rest of the text"."""
-        lower_text = text.lower()
+        lower_text, search_text = text.lower(), search_text.lower()
         highlighted_text = []
         open_tag = '<mark>'
         close_tag = '</mark>'
